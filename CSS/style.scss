@@ -110,8 +110,9 @@ h4{
 
 h5{
     @include partial.heading;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 1.5rem;
+    color: partial.$brandcolor
 }
 
 h6{
@@ -147,6 +148,8 @@ article a{
 
 /* .scrollx */
 .scrollx {
+    grid-column-start: 2;
+    grid-column-end: 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
@@ -170,47 +173,65 @@ article a{
 }
 
 .eventlink{
-    margin: 1rem 0 2rem 0;
+    
+    margin: 1rem 2rem 2rem;
 }
 
 .scrolltext{
     margin: 1rem;
 }
+
+.eventsektion{
+    display: grid;
+   grid-template-columns: 1rem 1fr 1rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.eventheading{
+    margin-left: 1rem;
+}
+
 /* end .scrollx */
 
 /* Footer */
-.footer {
-    display: grid;
-    grid-template-columns: 1fr 300px 1fr;
+
+footer{
+    background-color: partial.$boxcolor;
+    
 }
 
 .footercontent{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: partial.$boxcolor;
-}
-
-.logoplusnav{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
+        display: grid;
+        grid-template-columns: 1fr 170px 170px 1fr;
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr;
+        background-color: partial.$boxcolor;
+    }
 
 
 .footerlogo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     width: 150px;
     margin: 1rem;
 }
 
+.footernav{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 
+.kontakt{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 
 @media only screen and (min-width: 700px) {
     .fa-bars {
@@ -219,10 +240,13 @@ article a{
     header nav {
         display: block;
     }
-    ul {
+    header ul {
         display: flex;
         list-style-type: none;
         padding: 0;
         gap: 40px;
     }
 }
+
+/*Footer*/
+
