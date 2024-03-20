@@ -152,6 +152,7 @@ h6 {
 .articlecontainer {
   background-color: #003125;
   border-radius: 2rem;
+  width: 350px;
   padding-top: 0.01rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -184,7 +185,7 @@ article a {
   grid-column-start: 2;
   grid-column-end: 3;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
   overflow-x: scroll;
   max-width: 100vw;
@@ -262,7 +263,7 @@ footer {
   grid-row-end: 3;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 730px) {
   .fa-bars {
     display: none;
   }
@@ -274,6 +275,22 @@ footer {
     list-style-type: none;
     padding: 0;
     gap: 40px;
+  }
+  /*main*/
+  .introcontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .intro {
+    width: 500px;
+  }
+  .contentcontainer {
+    display: grid;
+    grid-template-columns: 1fr 720px 1fr;
+  }
+  .features {
+    display: flex;
+    justify-content: space-between;
   }
   /*Footer*/
   footer {
