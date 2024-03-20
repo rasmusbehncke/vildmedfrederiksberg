@@ -1,13 +1,15 @@
+@use 'partial';
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-
 body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 100px 1fr 70px;
+    background-color: partial.$background;
 }
 /* Header */
 header {
@@ -18,11 +20,18 @@ header {
     background-color: transparent;
     z-index: 1;
 }
-header i {
-    font-size: 2.5em;
+header {
+    i {
+        font-size: 2.5em;
+        color: partial.$brandcolor;
+        cursor: pointer;
+     }
 }
-header nav {
-    display: none;
+
+header {
+    nav {
+        display: none;
+    }
 }
 ul {
     list-style-type: none;
@@ -56,56 +65,149 @@ margin-top: -15vh;
     align-items: center;
 }
 
+.contentcontainer{
+    display: grid;
+    grid-template-columns: 1fr 350px 1fr;
+}
+
+.maincontent{
+   grid-column-start: 2;
+   grid-column-end: 3;
+}
+
 h1{
 text-align: center;
+@include partial.heading;
+font-size: 2.5rem;
+}
+
+p{
+    color: partial.$fontcolor;
+    font-family: bellota text;
+    line-height: 1.5;
+}
+
+a{
+    @include partial.heading;
+}
+
+h2{
+    @include partial.heading;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    @include partial.heading;
+    font-size: 1.8rem;
+}
+
+h4{
+    color: partial.$fontcolor;
+    font-family: bellota text;
+}
+
+h5{
+    @include partial.heading;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+h6{
+    @include partial.heading;
+    font-size: 1rem;
 }
 
 .CTA{
-;
+    @include partial.cta;
+
 }
 
+.articlecontainer{
+    @include partial.article;
+    padding-top: 0.01rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
 
-h1 {
- 
+article{
+    margin: 2rem;
+}
+article a{
+    @include partial.cta;
+    cursor: pointer;
+}
+
+.linkcontainer{
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* .scrollx */
 .scrollx {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 90px;
+    gap: 2rem;
     overflow-x: scroll;
     max-width: 100vw;
 }
 .scrollx div {
-    width: 325px;
+    width: 275px;
     height: 400px;
-    background: #ddd;
+    border-radius: 2rem;
+    background: partial.$boxcolor;
+    cursor: pointer;
+}
+
+.scrollimg{
+    width: 275px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.eventlink{
+    margin: 1rem 0 2rem 0;
+}
+
+.scrolltext{
+    margin: 1rem;
 }
 /* end .scrollx */
 
 /* Footer */
-footer {
+.footer {
     display: grid;
     grid-template-columns: 1fr 300px 1fr;
 }
 
 .footercontent{
-    grid-column: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: partial.$boxcolor;
 }
 
 .logoplusnav{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+
 
 .footerlogo{
     width: 150px;
+    margin: 1rem;
 }
 
 

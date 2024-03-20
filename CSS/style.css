@@ -1,3 +1,4 @@
+/*Variabler*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 100px 1fr 70px;
+  background-color: #000000;
 }
 
 /* Header */
@@ -21,6 +23,8 @@ header {
 
 header i {
   font-size: 2.5em;
+  color: #FF701E;
+  cursor: pointer;
 }
 
 header nav {
@@ -59,48 +63,183 @@ ul {
   align-items: center;
 }
 
+.contentcontainer {
+  display: grid;
+  grid-template-columns: 1fr 350px 1fr;
+}
+
+.maincontent {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 h1 {
   text-align: center;
+  font-family: "Battambang", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  color: #CCFFB4;
+  font-size: 2.5rem;
+}
+
+p {
+  color: #CCFFB4;
+  font-family: bellota text;
+  line-height: 1.5;
+}
+
+a {
+  font-family: "Battambang", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  color: #CCFFB4;
+}
+
+h2 {
+  font-family: "Battambang", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  color: #CCFFB4;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Battambang", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  color: #CCFFB4;
+  font-size: 1.8rem;
+}
+
+h4 {
+  color: #CCFFB4;
+  font-family: bellota text;
+}
+
+h5 {
+  font-family: "Battambang", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  color: #CCFFB4;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-family: "Battambang", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  color: #CCFFB4;
+  font-size: 1rem;
+}
+
+.CTA {
+  font-size: 20px;
+  color: #000000;
+  background-color: #FF701E;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.articlecontainer {
+  background-color: #003125;
+  border-radius: 2rem;
+  padding-top: 0.01rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+article {
+  margin: 2rem;
+}
+
+article a {
+  font-size: 20px;
+  color: #000000;
+  background-color: #FF701E;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.linkcontainer {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* .scrollx */
 .scrollx {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 90px;
+  gap: 2rem;
   overflow-x: scroll;
   max-width: 100vw;
 }
 
 .scrollx div {
-  width: 325px;
+  width: 275px;
   height: 400px;
-  background: #ddd;
+  border-radius: 2rem;
+  background: #003125;
+  cursor: pointer;
+}
+
+.scrollimg {
+  width: 275px;
+  height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.eventlink {
+  margin: 1rem 0 2rem 0;
+}
+
+.scrolltext {
+  margin: 1rem;
 }
 
 /* end .scrollx */
 /* Footer */
-footer {
+.footer {
   display: grid;
   grid-template-columns: 1fr 300px 1fr;
 }
 
 .footercontent {
-  grid-column: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #003125;
 }
 
 .logoplusnav {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 300px;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footerlogo {
   width: 150px;
+  margin: 1rem;
 }
 
 @media only screen and (min-width: 700px) {

@@ -9,27 +9,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bellota+Text&display=swap" rel="stylesheet">
     <script src="script/script.js" defer ></script>
 </head>
 <body>
 
     <header>
         <!-- i.fa-solid.fa-heart + tab -->
-        <img src="img/logo-small.png" alt="">
+        <a href="index.html"><img src="img/logo-small.png" alt="logo"></a> 
+        
         <i class="fa-solid fa-bars"></i>
         <!-- nav>ul>li*4>a{Lorem} + tab -->
         <nav>
             <ul>
-                <li><a href="">Forside</a></li>
-                <li><a href="">De 5 gode råd</a></li>
-                <li><a href="">Engager dig</a></li>
-                <li><a href="">Begivenheder</a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="5raad.html">De 5 gode råd</a></li>
+                <li><a href="engager.html">Engager dig</a></li>
+                <li><a href="begivenheder.html">Begivenheder</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- Hero sættes ind her-->
-        <!-- .hero>(div>div*2)+section>h1{Lorem Ipsum}+p{Lorem}+a{Lorem Ipsum} + tab -->
         <div class="hero">
                 <img class="heroimg" src="img/hero.jpg" alt="">
                 <div class="herocontent" >
@@ -37,34 +42,78 @@
                 <a class="CTA" href="">Opdag mulighederne</a>
                 </div>
         </div>
+        <div class="contentcontainer" >
+        <div class="maincontent" >
             <section>
                 <h2>Kom i gang med den bæredygtige livstil</h2>
                 <p>Opdag vejen mod en mere bæredygtig fremtid! Lær hvordan du kan træffe enkle, men kraftfulde skridt mod at reducere dit miljømæssige fodaftryk ved at dykke ned i denne hjemmeside. Uanset om det handler om genbrug, energibesparelse eller støtte til lokale fødevareproducenter, kan vores guide give dig værdifulde værktøjer og indsigt til at leve mere bæredygtigt og gøre en positiv forskel for vores planet.</p>
             </section>
+            <div class="articlecontainer">
             <article>
                 <h3>De gode råd</h3>
                 <p>Uanset om du er interesseret i at reducere dit affald, spare energi, støtte lokale landmænd eller foretage miljøvenlige valg, så er denne guide designet til at inspirere og hjælpe dig på vej.</p>
-                <a href="">Læs mere</a>
+                <div class="linkcontainer">
+                    <a href="">Læs mere</a>
+                </div>
             </article>
+            </div>
+            <div class="articlecontainer">
             <article>
                 <h3>Engager dig</h3>
                 <p>Vi er stolte af at præsentere dig for et spændende initiativ fra vores kommune, hvor vi fremmer en mere bæredygtig livsstil gennem aktive tiltag i vores lokalsamfund.</p>
-                <a href="">Læs mere</a>
+                <div class="linkcontainer">
+                    <a href="">Læs mere</a>
+                </div>
             </article>
+        </div>
         <!-- .scrollx -->
         <!-- section>h2{Lorem Ipsum}+div.scrollx>div*4 + tab -->
         <section>
             <h3>Begivenheder</h3>
             <div class="scrollx">
                 <div>
+                    <img class="scrollimg" src="img/event1.jpg" alt="">
+                    <section class="scrolltext">
+                    <p>Workshop</p>
                     <h4>Husstandens Klimaplan</h4>
+                    <p>Man. d. 2. juni 2024, kl 18:00</p>
+                    <p>KU:BE</p>
+                </section>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <img class="scrollimg" src="img/event2.jpg" alt="">
+                    <section class="scrolltext">
+                    <p>Talk</p>
+                    <h4>Den dyriske time</h4>
+                    <p>Tors. d. 18. juni 2024, kl 19:00</p>
+                    <p>Markskolen</p>
+                </section>
+                </div>
+                <div>
+                    <img class="scrollimg" src="img/event3.jpg" alt="">
+                    <section class="scrolltext">
+                    <p>Talk</p>
+                    <h4>Håb for Fremtiden?</h4>
+                    <p>Ons. d. 22. juni 2024, kl 18:00</p>
+                    <p>KU:BE</p>
+                </section>
+                </div>
+                <div>
+                    <img class="scrollimg" src="img/event4.jpg" alt="">
+                    <section class="scrolltext">
+                    <p>Workshop</p>
+                    <h4>Linse, bønne, ært?</h4>
+                    <p>Tirs. d. 30. juni 2024, kl 18:00</p>
+                    <p>KU:BE</p>
+                </section>
+                </div>
             </div>
-            <a href="">Se alle begivenheder</a>
+            <div class="linkcontainer" >
+            <a class="eventlink" href="">Se alle begivenheder</a>
+            </div>
         </section>
+    </div>
+</div>
     </main>
     <footer>
         <div class="footercontent" >
