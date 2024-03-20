@@ -227,7 +227,27 @@ article a {
   margin-left: 1rem;
 }
 
-/* end .scrollx */
+/* 5 raad */
+.raadimg {
+  border-radius: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+}
+
+.number {
+  color: #FF701E;
+  font-family: battambang;
+  font-size: 10rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: -2rem;
+}
+
+.articlehead {
+  display: flex;
+}
+
 /* Footer */
 footer {
   background-color: #003125;
