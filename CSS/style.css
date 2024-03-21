@@ -123,7 +123,7 @@ h5 {
   font-weight: 100;
   font-style: normal;
   color: #CCFFB4;
-  margin: 2rem;
+  padding: 2rem;
   font-size: 1.5rem;
   color: #FF701E;
   display: flex;
@@ -342,6 +342,9 @@ footer {
   /*Footer*/
   footer {
     background-color: #003125;
+  }
+  footer h5 {
+    padding: 1rem 0;
   }
   .footercontent {
     display: grid;

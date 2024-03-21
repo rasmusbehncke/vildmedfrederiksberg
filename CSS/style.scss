@@ -110,7 +110,7 @@ h4{
 
 h5{
     @include partial.heading;
-    margin: 2rem;
+    padding: 2rem;
     font-size: 1.5rem;
     color: partial.$brandcolor;
     display: flex;
@@ -320,8 +320,13 @@ footer{
 
 /*Footer*/
 
+
+
 footer{
     background-color: partial.$boxcolor;
+        h5{
+            padding: 1rem 0;
+        }
 }
 
 .footercontent{
