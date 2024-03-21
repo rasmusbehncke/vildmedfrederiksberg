@@ -20,15 +20,16 @@ header {
   background-color: transparent;
   z-index: 1;
 }
-
 header i {
   font-size: 2.5em;
   color: #FF701E;
   cursor: pointer;
 }
-
 header nav {
   display: none;
+}
+header ul {
+  margin-top: 5rem;
 }
 
 ul {
@@ -280,6 +281,10 @@ footer .kontaktnav {
     padding: 0;
     gap: 40px;
   }
+  /*header*/
+  header ul {
+    margin-top: 0rem;
+  }
   /*main*/
   .introcontainer {
     display: flex;
@@ -304,9 +309,5 @@ footer .kontaktnav {
     height: 450px;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  /*Footer*/
-  footer kontaktnav {
-    width: 500px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -19,24 +19,27 @@ header {
     padding: 0 28px;
     background-color: transparent;
     z-index: 1;
-}
-header {
+
     i {
         font-size: 2.5em;
         color: partial.$brandcolor;
         cursor: pointer;
      }
-}
-
-header {
-    nav {
+     nav {
         display: none;
     }
+    ul {
+        margin-top: 5rem;
+    }
 }
+
+
 ul {
     list-style-type: none;
     padding: 0;
+    
 }
+
 
 /* Main */
 
@@ -268,6 +271,14 @@ footer{
         padding: 0;
         gap: 40px;
     }
+
+
+/*header*/
+header{
+    ul {
+        margin-top: 0rem;
+    }
+}
 
 /*main*/
 
