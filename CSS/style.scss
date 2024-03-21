@@ -75,12 +75,6 @@ margin-top: -15vh;
    grid-column-end: 3;
 }
 
-h1{
-text-align: center;
-@include partial.heading;
-font-size: 2.5rem;
-}
-
 p{
     color: partial.$fontcolor;
     font-family: bellota text;
@@ -91,34 +85,31 @@ a{
     @include partial.heading;
 }
 
-h2{
+h1, h2, h3, h5, h6{
     @include partial.heading;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    }
+h2{
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-
 h3{
-    @include partial.heading;
     font-size: 1.8rem;
 }
-
 h4{
     color: partial.$fontcolor;
     font-family: bellota text;
 }
-
 h5{
-    @include partial.heading;
-    padding: 2rem;
     font-size: 1.5rem;
     color: partial.$brandcolor;
-    display: flex;
-    justify-content: center;
 }
-
 h6{
-    @include partial.heading;
     font-size: 1rem;
 }
 
@@ -137,11 +128,12 @@ h6{
 
 article{
     margin: 2rem;
+        a{
+            @include partial.cta;
+            cursor: pointer;
+        }
 }
-article a{
-    @include partial.cta;
-    cursor: pointer;
-}
+
 
 .linkcontainer{
     display: flex;
@@ -239,40 +231,29 @@ article a{
 /* Footer */
 
 footer{
-    background-color: partial.$boxcolor;
-}
-
-.footercontent{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 1rem;
-        grid-template-rows: 1fr 1fr;
-        background-color: partial.$boxcolor;
-    }
-
-
-.footerlogo{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 150px;
     
+    background-color: partial.$boxcolor;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 25rem;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+      .footerlogo{
+        width: 150px;
+      }
+      .kontaktnav{
+        display: flex;
+        justify-content: space-between;
+      }
 }
 
-.footernav{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
 
-.kontakt{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
+
+
+
+
+
 
 @media only screen and (min-width: 730px) {
     .fa-bars {
@@ -318,42 +299,5 @@ footer{
     object-fit: cover;
 }
 
-/*Footer*/
 
-
-
-footer{
-    background-color: partial.$boxcolor;
-        h5{
-            padding: 1rem 0;
-        }
-}
-
-.footercontent{
-    display: grid;
-    grid-template-columns: 1fr 200px 200px 200px 1fr;
-    gap: 1rem;
-    grid-template-rows: 1fr 2rem;
-    background-color: partial.$boxcolor;
-}
-
-
-.footerlogo{
-grid-column-start: 3;
-grid-column-end: 4;
-width: 150px;
-
-}
-
-.footernav{
-grid-column-start: 4;
-grid-column-end: 5;
-}
-
-.kontakt{
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 1;
-grid-row-end: 2;
-}
 }

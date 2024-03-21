@@ -73,15 +73,6 @@ ul {
   grid-column-end: 3;
 }
 
-h1 {
-  text-align: center;
-  font-family: "Battambang", system-ui;
-  font-weight: 100;
-  font-style: normal;
-  color: #CCFFB4;
-  font-size: 2.5rem;
-}
-
 p {
   color: #CCFFB4;
   font-family: bellota text;
@@ -95,21 +86,25 @@ a {
   color: #CCFFB4;
 }
 
-h2 {
+h1, h2, h3, h5, h6 {
   font-family: "Battambang", system-ui;
   font-weight: 100;
   font-style: normal;
   color: #CCFFB4;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+h2 {
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 h3 {
-  font-family: "Battambang", system-ui;
-  font-weight: 100;
-  font-style: normal;
-  color: #CCFFB4;
   font-size: 1.8rem;
 }
 
@@ -119,22 +114,11 @@ h4 {
 }
 
 h5 {
-  font-family: "Battambang", system-ui;
-  font-weight: 100;
-  font-style: normal;
-  color: #CCFFB4;
-  padding: 2rem;
   font-size: 1.5rem;
   color: #FF701E;
-  display: flex;
-  justify-content: center;
 }
 
 h6 {
-  font-family: "Battambang", system-ui;
-  font-weight: 100;
-  font-style: normal;
-  color: #CCFFB4;
   font-size: 1rem;
 }
 
@@ -162,7 +146,6 @@ h6 {
 article {
   margin: 2rem;
 }
-
 article a {
   font-size: 20px;
   color: #000000;
@@ -269,36 +252,19 @@ article a {
 /* Footer */
 footer {
   background-color: #003125;
-}
-
-.footercontent {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 25rem;
   gap: 1rem;
-  grid-template-rows: 1fr 1fr;
-  background-color: #003125;
+  align-items: center;
+  flex-direction: column;
 }
-
-.footerlogo {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+footer .footerlogo {
   width: 150px;
 }
-
-.footernav {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.kontakt {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+footer .kontaktnav {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 730px) {
@@ -340,32 +306,7 @@ footer {
        object-fit: cover;
   }
   /*Footer*/
-  footer {
-    background-color: #003125;
-  }
-  footer h5 {
-    padding: 1rem 0;
-  }
-  .footercontent {
-    display: grid;
-    grid-template-columns: 1fr 200px 200px 200px 1fr;
-    gap: 1rem;
-    grid-template-rows: 1fr 2rem;
-    background-color: #003125;
-  }
-  .footerlogo {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    width: 150px;
-  }
-  .footernav {
-    grid-column-start: 4;
-    grid-column-end: 5;
-  }
-  .kontakt {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  footer kontaktnav {
+    width: 500px;
   }
 }/*# sourceMappingURL=style.css.map */
