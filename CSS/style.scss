@@ -216,6 +216,25 @@ article a{
     display: flex;
 }
 
+/*Begivenheder*/
+
+.eventimg{
+    border-radius: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 250px;
+    object-fit: cover;
+}
+
+.date{
+    color: partial.$brandcolor;
+    font-family: battambang;
+    font-size: 3rem;
+    margin-right: 1rem;
+   
+    margin-top: -2rem;
+}
+
 /* Footer */
 
 footer{
@@ -286,6 +305,16 @@ footer{
 .features{
     display: flex;
     justify-content: space-between;
+}
+
+/*Begivenheder*/
+
+.eventimg{
+    border-radius: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 450px;
+    object-fit: cover;
 }
 
 /*Footer*/
