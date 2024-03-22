@@ -5,4 +5,5 @@ const openNav = () => {
     nav.style.display = "block";
 }
 
-bars.addEventListener("click", openNav)
+bars.addEventListener("click", openNav);
+

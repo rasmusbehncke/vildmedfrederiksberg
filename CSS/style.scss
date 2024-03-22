@@ -11,6 +11,7 @@ body {
     grid-template-rows: 100px 1fr 70px;
     background-color: partial.$background;
 }
+
 /* Header */
 header {
     display: flex;
@@ -19,17 +20,19 @@ header {
     padding: 0 28px;
     background-color: transparent;
     z-index: 1;
+
     i {
         font-size: 2.5em;
         color: partial.$brandcolor;
         cursor: pointer;
      }
+
      nav {
         display: none;
     }
+
     ul {
         margin-top: 5rem;
-
     }
 }
 
@@ -43,12 +46,7 @@ ul {
 
 /* Main */
 
-.heroimg{
-width: 100%;
-height: 85vh;
-object-fit: cover;
-margin-top: -15vh;
-}
+
 
 .hero {
     height: 70vh;
@@ -56,27 +54,38 @@ margin-top: -15vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .heroimg{
+        width: 100%;
+        height: 85vh;
+        object-fit: cover;
+        margin-top: -15vh;
+        }
+
+    .herocontent{
+        margin-top: -15vh;
+        height: 40vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        }
 }
 
-.herocontent{
-    margin-top: -15vh;
-    height: 40vh;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .contentcontainer{
     display: grid;
     grid-template-columns: 1fr 350px 1fr;
+
+    .maincontent{
+        grid-column-start: 2;
+        grid-column-end: 3;
+     }
 }
 
-.maincontent{
-   grid-column-start: 2;
-   grid-column-end: 3;
-}
+
 
 p{
     color: partial.$fontcolor;
@@ -118,7 +127,11 @@ h6{
 
 .CTA{
     @include partial.cta;
+}
 
+.CTA:hover {
+    background-color: partial.$background;
+    color: partial.$brandcolor;
 }
 
 .articlecontainer{
@@ -152,31 +165,35 @@ article{
     gap: 2rem;
     overflow-x: scroll;
     max-width: 100vw;
-}
-.scrollx div {
-    width: 275px;
-    height: 400px;
-    border-radius: 2rem;
-    background: partial.$boxcolor;
-    cursor: pointer;
+
+    div {
+        width: 275px;
+        height: 400px;
+        border-radius: 2rem;
+        background: partial.$boxcolor;
+        cursor: pointer;
+    }
+
+    .scrollimg{
+        width: 275px;
+        height: 225px;
+        object-fit: cover;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+
+    .scrolltext{
+        margin: 1rem;
+    }
 }
 
-.scrollimg{
-    width: 275px;
-    height: 225px;
-    object-fit: cover;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
 
 .eventlink{
     
     margin: 1rem 2rem 2rem;
 }
 
-.scrolltext{
-    margin: 1rem;
-}
+
 
 .eventsektion{
     display: grid;
@@ -242,9 +259,11 @@ footer{
     gap: 1rem;
     align-items: center;
     flex-direction: column;
-      .footerlogo{
+      
+    .footerlogo{
         width: 150px;
       }
+      
       .kontaktnav{
         display: flex;
         justify-content: space-between;
@@ -285,10 +304,12 @@ header{
 .introcontainer{
     display: flex;
     justify-content: center;
+
+    .intro{
+        width: 500px;
+    }
 }
-.intro{
-    width: 500px;
-}
+
 
 .contentcontainer{
     display: grid;
